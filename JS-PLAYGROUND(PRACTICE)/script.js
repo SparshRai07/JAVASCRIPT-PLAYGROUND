@@ -248,12 +248,96 @@ lines`);
 //       console.log(`Sara is too young wait another {yearsLseft} years :)`);
 //    }
 
-const age = 25;
+// const age = 25;
 
-if(age >= 18) {
-   console.log('Sarah can start driving licsense');
+// if(age >= 18) {
+//    console.log('Sarah can start driving licsense');
+// }
+// else{
+//    const yearsLeft = 18 - age;
+//    console.log(`Sarah is too young. Wait another ${yearsLeft} years;)`)
+// }
+
+
+// const massMark = 70;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// const BMIMark = massMark / (heightMark * heightMark);
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+
+// if (BMIMark > BMIJohn) {
+//    console.log(`Mark's BMI (${BMIMark}) is higher than john's (${BMIJohn})!`);
+// } else {
+//    console.log(`John's BMI (${BMIJohn}) higher than Mark's (${BMIMark})!`);
+// }
+
+
+//TYPE CONVERSION 
+
+const inputYear = '1991';
+console.log (inputYear); 
+console.log(Number(inputYear) + 10); //Output: 2001//
+console.log(Number(inputYear) + inputYear); //Output: 19911991// 
+console.log(Number(inputYear) + Number(inputYear)); //Output: 3982//
+
+console.log(Number);
+
+console.log( String(23), 23);
+
+//TYPE COERCION
+
+console.log(`I am ${23} years old`); // output: I am 23 years old
+
+console.log('23' - '10' -3 ); // output: 10
+console.log('23' + '10' +3 ); // output: 23103
+console.log('23' * '2') //output: 46
+
+let n = '1' + 1; //11
+n = n-1; //10
+console.log(n);
+//output: 10;
+
+//2+3+4+'5'= "95"
+
+//'10'-'4'-'3'-2+'5' = "15"
+//'10' = "10"
+//'10' - '4' = 6 //subtraction
+//6 - '3' = 3 //subtraction
+//3 - 2 = 1 //subtraction
+//1 + '5' = "15" //addition and concatenation
+
+//TRUTHY AND FALSY VALUES
+
+//FALSY VALUES 5: 0, '', UNDEFINED, NULL, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+if  (money) {
+   console.log("Dont spend it all;");
+} else {
+   console.log('you should get a job!');
 }
-else{
-   const yearsLeft = 18 - age;
-   console.log(`Sarah is too young. Wait another ${yearsLeft} years;)`)
+
+let height;
+if (height) {
+   console.log('YaY! Height is defined');
+
+}else{
+   console.log('Height is UNDEFINED');
 }
+
+ //Equality Operators
+
+ 
+  
+
+ 
+ 
+
