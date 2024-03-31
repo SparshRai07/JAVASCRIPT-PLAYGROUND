@@ -196,31 +196,31 @@
 
 // //STRINGS AND TEMPLATE LITERALS
 
-const firstName = 'Sparsh';
-const job = 'teacher';
-const birthYear = 1991;
-const year = 2037;
+// const firstName = 'Sparsh';
+// const job = 'teacher';
+// const birthYear = 1991;
+// const year = 2037;
 
-// const jonas = "i'm" + firstName + ',a' + (year - birthYear) + ' years old' + jon + '!';
-// console.log(jonas);
+// // const jonas = "i'm" + firstName + ',a' + (year - birthYear) + ' years old' + jon + '!';
+// // console.log(jonas);
 
-//TEMPLATE LITERALS
-const jonasNew = `i'm  ${firstName}, a ${year - birthYear} year old ${job}!`;
-console.log (jonasNew);
+// //TEMPLATE LITERALS
+// const jonasNew = `i'm  ${firstName}, a ${year - birthYear} year old ${job}!`;
+// console.log (jonasNew);
 
 
-//Make a habit of checking the console for possible mistakes and possible errors
-console.log(`just a regular string ...`);
+// //Make a habit of checking the console for possible mistakes and possible errors
+// console.log(`just a regular string ...`);
 
-console.log("checking if console.log prints other things");
+// console.log("checking if console.log prints other things");
 
-//strings with multiple linnes 
-console.log (`String with \n\ multiple \n\ lines`);
+// //strings with multiple linnes 
+// console.log (`String with \n\ multiple \n\ lines`);
 
-//Can be achieved similar result just using backtick
-console.log(`String
-multiple
-lines`);
+// //Can be achieved similar result just using backtick
+// console.log(`String
+// multiple
+// lines`);
 
 
 
@@ -276,27 +276,27 @@ lines`);
 
 //TYPE CONVERSION 
 
-const inputYear = '1991';
-console.log (inputYear); 
-console.log(Number(inputYear) + 10); //Output: 2001//
-console.log(Number(inputYear) + inputYear); //Output: 19911991// 
-console.log(Number(inputYear) + Number(inputYear)); //Output: 3982//
+// const inputYear = '1991';
+// console.log (inputYear); 
+// console.log(Number(inputYear) + 10); //Output: 2001//
+// console.log(Number(inputYear) + inputYear); //Output: 19911991// 
+// console.log(Number(inputYear) + Number(inputYear)); //Output: 3982//
 
-console.log(Number);
+// console.log(Number);
 
-console.log( String(23), 23);
+// console.log( String(23), 23);
 
-//TYPE COERCION
+// //TYPE COERCION
 
-console.log(`I am ${23} years old`); // output: I am 23 years old
+// console.log(`I am ${23} years old`); // output: I am 23 years old
 
-console.log('23' - '10' -3 ); // output: 10
-console.log('23' + '10' +3 ); // output: 23103
-console.log('23' * '2') //output: 46
+// console.log('23' - '10' -3 ); // output: 10
+// console.log('23' + '10' +3 ); // output: 23103
+// console.log('23' * '2') //output: 46
 
-let n = '1' + 1; //11
-n = n-1; //10
-console.log(n);
+// let n = '1' + 1; //11
+// n = n-1; //10
+// console.log(n);
 //output: 10;
 
 //2+3+4+'5'= "95"
@@ -312,32 +312,182 @@ console.log(n);
 
 //FALSY VALUES 5: 0, '', UNDEFINED, NULL, NaN
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
-console.log(Boolean({}));
-console.log(Boolean(''));
-
-const money = 0;
-if  (money) {
-   console.log("Dont spend it all;");
-} else {
-   console.log('you should get a job!');
-}
-
-let height;
-if (height) {
-   console.log('YaY! Height is defined');
-
-}else{
-   console.log('Height is UNDEFINED');
-}
+// v 
 
  //Equality Operators
 
+
+//  const age = 18;
+//  if (age === 18  ) console.log('you just became adult :D');
+
+
  
+//  let bage  = 25; // Assigns the value 25 to the variable 'bage'
+
+  //Purpose: It creates a binding between the variable name and the value on the right side. Any subsequent changes to the value on the right side won't affect the original value assigned to the variable.
+
+//   console.log(1 === '1');   // false (different types)
+//   console.log(0 === false); // false (different types)
+//   console.log(null === undefined); // false (different types)
+//   console.log([] === []);   // false (different memory locations)
   
 
- 
- 
+// if (age == 18) console.log('You just became an adult :D (loose)');
 
+// prompt("What is your favorite number?");
+
+// console.log(favorite);
+// console.log(typeof favorite);
+
+// if(favorite == 23 ) { // '23' == 23
+//    console.log('Cool! 23 is an amazinf number!')
+// }
+
+// console.log(5 == '5');  // true, because '5' is converted to a number
+// console.log(0 == false);  // true, because 0 and false are both falsy
+// console.log('1' == true);  // true, because '1' is converted to a number (1) and true is considered 1 in numeric context
+// console.log(null == undefined);  // true, as null and undefined are considered equal
+// console.log('hello' == 'hello');  // true, because both strings are identical
+
+
+// const age = 18;
+// if(age === 18) 
+//   console.log('you just became an adult :D');
+
+// if (age == 18) console.log('you just became an adult :D (loose)'); //avoid this as much as possible for writing clean code
+
+// const favorite = prompt("what's your favorite number?");
+// console.log(favorite);
+// console.log(typeof favorite);
+
+// if(favorite == 23) { //'23' == 23 -> FALSE
+//    console.log('Cool! 23 is an amazing number!')
+// } else if (favorite == 7) {
+//    console.log('7 is also a cool number')
+// } else  if (favorite === 9) {
+//    console.log
+//       ('9 is also a cool number')
+//    } else {
+//    console .log ('Number is not 23 or 7 OR 9')
+// }
+
+//always use the strict version of == (== and !==)  
+
+
+//DISCIPLINE DICTATES YOUR DESTINY
+
+
+//LOGICAL OPERATORS
+
+//Booleans Value  
+
+//A Boolean is a data type that can hold one of two possible values: true or false. It is used to represent the truth value of an expression, which is essential in control flow and decision-making in programming.
+
+
+// AND (&&): Returns true if both operands are true; otherwise, returns false.
+
+// Syntax: expr1 && expr2
+
+// Example:
+
+// if (isRaining && isCold) {
+//    console.log("Better wear a coat!");
+//  }
+
+
+
+// OR (||): Returns true if at least one of the operands is true; if both are false, returns false.
+
+// Syntax: expr1 || expr2
+
+// Example:
+// if (isRaining || isSunny) {
+//    console.log("Take an umbrella or sunscreen!");
+//  }
+
+// NOT (!): Inverts the truth value of its operand. If the operand is true, returns false, and vice versa.
+
+// Syntax: !expr
+
+// Example:
+
+// if (!isRaining) {
+//    console.log("No need for an umbrella.");
+//  }
+
+// const isRaining = false; // define isRaining before using it
+// const isSunny = true; // define isSunny before using it
+
+// if (isRaining && !isSunny) {
+//    console.log("It's raining without sunshine.");
+//  } else if (!isRaining && isSunny) {
+//    console.log("It's sunny and not raining.");
+//  } else {
+//    console.log("The weather is unpredictable.");
+//  }
+
+// const hadDriversLicense = true; // A
+// const hasGoodVision = false; //B
+
+// console.log (hadDriversLicense && hasGoodVision );
+// console.log (hadDriversLicense || hasGoodVision );
+// console.log (!hadDriversLicense);
+
+// const shouldDrive = hadDriversLicense && hasGoodVision; // syntax error fixed
+
+// if (hadDriversLicense && hasGoodVision) {
+//    console.log('Sarah is able to drive!');
+// } else {
+//    console.log('Someone else should drive...');
+// }
+
+//A Boolean is a data type that can hold one of two possible values: true or false. It is used to represent the truth value of an expression, which is essential in control flow and decision-making in programming.
+
+//!isTired-->is not tired
+
+// const isTired = false; 
+// console.log(hadDriversLicense && hasGoodVision && isTired); 
+
+// if (hadDriversLicense && hasGoodVision && !isTired) {
+//    console.log('Sarah is able to drive!');
+// } else {
+//    console.log('Someone else should drive...');
+// }
+
+
+// CHALLENGE #3
+// There are two gymnastics teams: Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
+// Your tasks:
+// 1. Calculate the average score for each team, using the test data included below. The average score for Dolphins should be assigned to the scoreDolphins variable, and the average score of Koalas should be assigned to the scoreKoalas variable.
+// 2. Compare the team's average scores to determine the winner of the competition, and print to the console:
+// "Dolphins win the trophy" if Dolphins win, or
+// "Koalas win the trophy" if Koalas win, or
+// "Both win the trophy" if their average scores are equal.
+
+// TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
+// CHALLENGE #3
+// There are two gymnastics teams: Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
+// Your tasks:
+// 1. Calculate the average score for each team, using the test data included below. The average score for Dolphins should be assigned to the scoreDolphins variable, and the average score of Koalas should be assigned to the scoreKoalas variable.
+// 2. Compare the team's average scores to determine the winner of the competition, and print to the console:
+// "Dolphins win the trophy" if Dolphins win, or
+// "Koalas win the trophy" if Koalas win, or
+// "Both win the trophy" if their average scores are equal.
+
+// TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+if(scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+   console.log('Dolphins win the trophy');
+} 
+  else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+   console.log('koalas win the trophy');
+} else if (scoreDolphins === scoreKoalas >= 100) {
+   console.log('Both win the trophy!');
+} else {
+   console.log('No one wins the trophy');
+}
+
+//25 (twenty five)--
