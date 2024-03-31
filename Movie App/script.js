@@ -1,1 +1,2 @@
-const API_URL = 'https://api.moviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1'
+// 
+// the app was unfinished because the API endpoint was shutdown and the app cannot be built further onto the next project
