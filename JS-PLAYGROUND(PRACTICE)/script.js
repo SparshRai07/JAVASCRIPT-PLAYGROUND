@@ -491,3 +491,71 @@ if(scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 }
 
 //25 (twenty five)--
+
+// Switch Statment
+// Function that uses a switch statement to check a grade value
+function evaluateGrade(grade) {
+   // Using a switch statement to handle different cases based on 'grade' value
+   switch (grade) {
+       case 'A':
+           console.log('Excellent!'); // Log "Excellent!" if grade is 'A'
+           break; // Breaks out of the switch block to avoid executing more cases
+
+       case 'B':
+           console.log('Good job!'); // Log "Good job!" if grade is 'B'
+           break; // Break to prevent further case execution
+
+       case 'C':
+           console.log('Well done!'); // Log "Well done!" if grade is 'C'
+           break; // Break to exit the switch statement
+
+       case 'D':
+           console.log('You passed'); // Log "You passed" if grade is 'D'
+           break; // Break to halt further execution
+
+       case 'F':
+           console.log('Better luck next time'); // Log "Better luck next time" if grade is 'F'
+           break; // Break to stop the switch
+
+       default:
+           console.log('Invalid grade'); // Log "Invalid grade" if none of the cases match
+   }
+}
+
+// Call the function with different grades
+evaluateGrade('A'); // Logs "Excellent!"
+evaluateGrade('B'); // Logs "Good job!"
+evaluateGrade('F'); // Logs "Better luck next time"
+evaluateGrade('G'); // Logs "Invalid grade"
+
+
+// Function that uses if/else statements to check a grade value
+function evaluateGrade(grade) {
+   // Check if grade is 'A'
+   if (grade === 'A') {
+       console.log('Excellent!'); // Log "Excellent!" if grade is 'A'
+   } else if (grade === 'B') { // Check if grade is 'B'
+       console.log('Good job!'); // Log "Good job!" if grade is 'B'
+   } else if (grade === 'C') { // Check if grade is 'C'
+       console.log('Well done!'); // Log "Well done!" if grade is 'C'
+   } else if (grade === 'D') { // Check if grade is 'D'
+       console.log('You passed'); // Log "You passed" if grade is 'D'
+   } else if (grade === 'F') { // Check if grade is 'F'
+       console.log('Better luck next time'); // Log "Better luck next time" if grade is 'F'
+   } else { // Handle any other value
+       console.log('Invalid grade'); // Log "Invalid grade" if none of the conditions above are met
+   }
+}
+
+// Call the function with different grades
+evaluateGrade('A'); // Logs "Excellent!"
+evaluateGrade('B'); // Logs "Good job!"
+evaluateGrade('F'); // Logs "Better luck next time"
+evaluateGrade('G'); // Logs
+
+//Statements and Expressions
+ if (23 > 10) {
+   const str = '23 is bigger';
+ }
+
+ 
