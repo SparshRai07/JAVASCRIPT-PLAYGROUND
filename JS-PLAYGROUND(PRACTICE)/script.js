@@ -476,86 +476,184 @@
 
 // TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
 
-const scoreDolphins = (96 + 108 + 89) / 3;
-const scoreKoalas = (88 + 91 + 110) / 3;
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
 
-if(scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
-   console.log('Dolphins win the trophy');
-} 
-  else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
-   console.log('koalas win the trophy');
-} else if (scoreDolphins === scoreKoalas >= 100) {
-   console.log('Both win the trophy!');
-} else {
-   console.log('No one wins the trophy');
-}
+// if(scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+//    console.log('Dolphins win the trophy');
+// } 
+//   else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+//    console.log('koalas win the trophy');
+// } else if (scoreDolphins === scoreKoalas >= 100) {
+//    console.log('Both win the trophy!');
+// } else {
+//    console.log('No one wins the trophy');
+// }
 
-//25 (twenty five)--
+// //25 (twenty five)--
 
-// Switch Statment
-// Function that uses a switch statement to check a grade value
-function evaluateGrade(grade) {
-   // Using a switch statement to handle different cases based on 'grade' value
-   switch (grade) {
-       case 'A':
-           console.log('Excellent!'); // Log "Excellent!" if grade is 'A'
-           break; // Breaks out of the switch block to avoid executing more cases
+// // Switch Statment
+// // Function that uses a switch statement to check a grade value
+// function evaluateGrade(grade) {
+//    // Using a switch statement to handle different cases based on 'grade' value
+//    switch (grade) {
+//        case 'A':
+//            console.log('Excellent!'); // Log "Excellent!" if grade is 'A'
+//            break; // Breaks out of the switch block to avoid executing more cases
 
-       case 'B':
-           console.log('Good job!'); // Log "Good job!" if grade is 'B'
-           break; // Break to prevent further case execution
+//        case 'B':
+//            console.log('Good job!'); // Log "Good job!" if grade is 'B'
+//            break; // Break to prevent further case execution
 
-       case 'C':
-           console.log('Well done!'); // Log "Well done!" if grade is 'C'
-           break; // Break to exit the switch statement
+//        case 'C':
+//            console.log('Well done!'); // Log "Well done!" if grade is 'C'
+//            break; // Break to exit the switch statement
 
-       case 'D':
-           console.log('You passed'); // Log "You passed" if grade is 'D'
-           break; // Break to halt further execution
+//        case 'D':
+//            console.log('You passed'); // Log "You passed" if grade is 'D'
+//            break; // Break to halt further execution
 
-       case 'F':
-           console.log('Better luck next time'); // Log "Better luck next time" if grade is 'F'
-           break; // Break to stop the switch
+//        case 'F':
+//            console.log('Better luck next time'); // Log "Better luck next time" if grade is 'F'
+//            break; // Break to stop the switch
 
-       default:
-           console.log('Invalid grade'); // Log "Invalid grade" if none of the cases match
-   }
-}
+//        default:
+//            console.log('Invalid grade'); // Log "Invalid grade" if none of the cases match
+//    }
+// }
 
-// Call the function with different grades
-evaluateGrade('A'); // Logs "Excellent!"
-evaluateGrade('B'); // Logs "Good job!"
-evaluateGrade('F'); // Logs "Better luck next time"
-evaluateGrade('G'); // Logs "Invalid grade"
+// // Call the function with different grades
+// evaluateGrade('A'); // Logs "Excellent!"
+// evaluateGrade('B'); // Logs "Good job!"
+// evaluateGrade('F'); // Logs "Better luck next time"
+// evaluateGrade('G'); // Logs "Invalid grade"
 
 
-// Function that uses if/else statements to check a grade value
-function evaluateGrade(grade) {
-   // Check if grade is 'A'
-   if (grade === 'A') {
-       console.log('Excellent!'); // Log "Excellent!" if grade is 'A'
-   } else if (grade === 'B') { // Check if grade is 'B'
-       console.log('Good job!'); // Log "Good job!" if grade is 'B'
-   } else if (grade === 'C') { // Check if grade is 'C'
-       console.log('Well done!'); // Log "Well done!" if grade is 'C'
-   } else if (grade === 'D') { // Check if grade is 'D'
-       console.log('You passed'); // Log "You passed" if grade is 'D'
-   } else if (grade === 'F') { // Check if grade is 'F'
-       console.log('Better luck next time'); // Log "Better luck next time" if grade is 'F'
-   } else { // Handle any other value
-       console.log('Invalid grade'); // Log "Invalid grade" if none of the conditions above are met
-   }
-}
+// // Function that uses if/else statements to check a grade value
+// function evaluateGrade(grade) {
+//    // Check if grade is 'A'
+//    if (grade === 'A') {
+//        console.log('Excellent!'); // Log "Excellent!" if grade is 'A'
+//    } else if (grade === 'B') { // Check if grade is 'B'
+//        console.log('Good job!'); // Log "Good job!" if grade is 'B'
+//    } else if (grade === 'C') { // Check if grade is 'C'
+//        console.log('Well done!'); // Log "Well done!" if grade is 'C'
+//    } else if (grade === 'D') { // Check if grade is 'D'
+//        console.log('You passed'); // Log "You passed" if grade is 'D'
+//    } else if (grade === 'F') { // Check if grade is 'F'
+//        console.log('Better luck next time'); // Log "Better luck next time" if grade is 'F'
+//    } else { // Handle any other value
+//        console.log('Invalid grade'); // Log "Invalid grade" if none of the conditions above are met
+//    }
+// }
 
-// Call the function with different grades
-evaluateGrade('A'); // Logs "Excellent!"
-evaluateGrade('B'); // Logs "Good job!"
-evaluateGrade('F'); // Logs "Better luck next time"
-evaluateGrade('G'); // Logs
+// // Call the function with different grades
+// evaluateGrade('A'); // Logs "Excellent!"
+// evaluateGrade('B'); // Logs "Good job!"
+// evaluateGrade('F'); // Logs "Better luck next time"
+// evaluateGrade('G'); // Logs
 
-//Statements and Expressions
- if (23 > 10) {
-   const str = '23 is bigger';
- }
+// //Statements and Expressions
+//  if (23 > 10) {
+//    const str = '23 is bigger';
+//  }
 
  
+ //the conditional (ternary Operator)
+
+//  const age = 23;
+//  (() => {
+//  	if (age >= 18) {
+//  		console.log('I like to drink wine');
+//  	} else {
+//  		console.log('I like to drink water ');
+//  	}
+//  })();
+
+//28
+
+const age = 23;
+age>=18? console.log('drink wine')
+: console.log('drink water')
+
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+if(age >= 18) {
+	drink2 = 'wine..wine';
+} else {
+ 
+	drink2 = 'water..water';
+}
+
+console.log(drink2);
+
+//TERNARY OPERATOR
+
+console.log(`i like to drink ${age >= 18 ? 'wine' : 'water'}`);
+
+
+let Bage = 20;
+let canVote = (Bage >= 18) ? "Yes" : "No";
+console.log(canVote); // Outputs: Yes
+
+// Nested Ternary Operator
+
+let score = 85;
+let grade = (score >= 90) ? "A" :
+            (score >= 80) ? "B" :
+            (score >= 70) ? "C" : "D";
+console.log(grade); // Outputs: B
+
+//CODING CHALLANGE
+
+const bill = 275;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+const total = bill + tip;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value &{total}`);
+
+
+//CODING CHALLANGE 2
+
+hour = 1;
+
+if (hour >= 5 && hour < 12) {
+	console.log('Good Morning');
+} else if (hour >= 12 && hour < 17){
+	console.log('Good Afternoon');
+}else{
+	console.log('Good Evening');
+}
+
+
+//A brief history of JAVASCRIPT
+// 1995 - very first version of JavaScript (mad in just 10 days)- Brendan Eich 
+//first JavaScript was called mocha and then LiveScript to JavaScript(mostly inorder to attract java Developers)
+
+// 1997- with a need to standardize the language, ECMA releases ECMAScript 1 (ES1), the first official standard for JavaScript(ECMAScript is the standard, JavaScript the language in practice).
+
+//2009 - ES5 (ECMAScript 5 )is released with lots of great new features
+// (6 years later)
+
+
+// 2015 - ES6/ES2015 (ECMAScript 2015) was released, the biggest update to the language ever!
+
+//ECMASCRIPT changes to an annual release cycle in order to ship les features per update.
+
+//2016 to infinity - release of ES2016/../../ES2019/../ES2021/../ES2089 and so on..
+
+//JavaScript is Backwards Compatible(it does not break the WEB).
+//-OLD features are never removed
+//-Not really new versions, just incremental updates
+//websites keep working forever
+
+
+
+// "use strict";
+// Your code here
+// use strict is a literal string that tells the JavaScript engine to interpret the code under its scope in "strict mode." This mode enforces stricter parsing rules, throws errors for potential problems, and discourages practices that can lead to bugs.
+
+
+//FUNCTIONS (33)
