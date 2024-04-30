@@ -814,3 +814,207 @@ const triple = makeMultiplier(3);
 console.log(double(5));  // Outputs: 10
 console.log(triple(5));  // Outputs: 15
 
+//eg:5
+function greet() {
+	return "Hello";
+}
+
+function greetPerson(name) {
+	let greeting = greet();
+	console.log(`${greeting}, ${name}!`);
+}
+
+greetPerson('Sparsh');  // Outputs: Hello, Alice!
+
+//eg:6 
+function multiply(a, b) {
+	return a * b;
+}
+
+function square(n) {
+	return multiply(n, n);
+}
+
+console.log(square(5));  // Outputs: 25
+
+//eg:7
+function makeAdder(x) {
+	return function(y) {
+		 return x + y;
+	};
+}
+
+const addFive = makeAdder(5);
+console.log(addFive(3));  // Outputs: 8
+
+//eg:8
+const numbers = [1, 2, 3];
+const doubled = numbers.map(function(num) {
+    return num * 2;
+});
+console.log(doubled);  // Outputs: [2, 4, 6]
+
+//eg:9
+function cutFruitPieces(fruit) {
+	return fruit * 4;
+}
+
+function fruitProcessor (apples, oranges) {
+	const applePieces = cutFruitPieces(apples);
+	const orangePieces = cutFruitPieces(oranges);
+ 
+    const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+	return juice;
+}
+console.log(fruitProcessor(2, 3));
+
+//eg:10
+function calcAge(birthYear, firstName) { //parameters 
+	const age = 2037 - birthYear;
+	const name = firstName +' '+ 'Rai';
+	console.log(`${name} is ${age} years old`);
+	return age;
+
+}
+
+const age = calcAge(1991, 'Jonas') //arguements 
+
+
+//CODING CHALLANGE
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+
+function checkWinner(avgDolphins, avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+    } else {
+        console.log("No team wins...");
+    }
+}
+
+
+const scoreDolphins2 = calcAverage(85, 54, 41);
+const scoreKoalas2 = calcAverage(23, 34, 27);
+checkWinner(scoreDolphins2, scoreKoalas2);
+checkWinner(scoreDolphins, scoreKoalas);
+
+
+
+//ARRAYS
+
+//In JavaScript, an array is a single, high-level, list-like object used to store multiple values as a single entity. Arrays allow you to store collections of data, whether they be numbers, strings, objects, or even other arrays. They are particularly useful when you need to work with large data sets, such as lists of user input or elements on a webpage.
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array (1991, 1984, 2008, 2020);
+console.log(years);
+
+console.log(friends[0]);
+console.log(years[0]);
+
+console.log(friends.length);
+console.log(years.length);
+
+console.log(friends[friends.length - 1]);
+console.log(years[years.length - 1]);
+
+friends [2] = 'Jay';
+console.log(friends);
+
+
+
+const firstName = 'Jonas';
+const jonas = ['Jonas', 'Schmedtmann', 2037 - 1991, 'teacher',friends];
+
+console.log(jonas);
+console.log(jonas.length);
+
+//Exercise
+const calcAge = function (birthYear) {
+	return 2037 - birthYear;
+}
+const years1 = [1990, 1967, 2002, 2010, 2018];
+
+console.log(calcAge(years1));
+
+
+// Creating an array
+const fruits = ["Apple", "Banana", "Cherry"];
+
+// Accessing array elements
+console.log(fruits[0]); // Outputs: Apple
+console.log(fruits[2]); // Outputs: Cherry
+
+// Adding an element
+fruits.push("Date");
+
+// Looping through an array
+fruits.forEach(fruit => console.log(fruit));
+
+// Initializing an array with numbers
+const numbersQ = [1, 2, 3, 4, 5];
+
+// Adding elements at the start and end
+numbers.push(6); // Add to the end
+numbers.unshift(0); // Add to the start
+
+// Removing elements from the start and end
+const first = numbers.shift(); // Removes the first element
+const last = numbers.pop(); // Removes the last element
+
+// Using slice to create a new array
+const quickSlice = numbers.slice(1, 4); // Extracts elements at index 1 to 3
+
+console.log(quickSlice); // Outputs: [2, 3, 4]
+
+
+// Two arrays of numbers
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+// Concatenating two arrays
+const combined = array1.concat(array2);
+
+// Mapping to a new array
+const multiplied = combined.map(x => x * 2);
+
+// Filtering the array
+const filtered = multiplied.filter(x => x > 8);
+
+// Reducing to a single value
+const sum = filtered.reduce((acc, x) => acc + x, 0);
+
+console.log(sum); // Outputs: 28 (10 + 12)
+
+// Expert Example: Complex Array Operations
+
+// Array of objects representing people
+const people = [
+	{ name: "Alice", age: 25 },
+	{ name: "Bob", age: 30 },
+	{ name: "Charlie", age: 28 }
+];
+
+// Sorting by age
+people.sort((a, b) => a.age - b.age);
+
+// Finding a person
+const charlie = people.find(person => person.name === "Charlie");
+
+// Checking if all are older than 20
+const allOlderThan20 = people.every(person => person.age > 20);
+
+// Checking if any are older than 30
+const anyOlderThan30 = people.some(person => person.age > 30);
+
+console.log(charlie); // Outputs: { name: 'Charlie', age: 28 }
+console.log(allOlderThan20); // true
+console.log(anyOlderThan30); // false
