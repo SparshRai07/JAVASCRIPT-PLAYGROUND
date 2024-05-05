@@ -762,259 +762,394 @@
 // fruitProcessor(2, 3);
 
 
-function greet() {
-	console.log("Hello!");
-}
+// function greet() {
+// 	console.log("Hello!");
+// }
 
-function greetTwice() {
-	greet();  // First call
-	greet();  // Second call
-}
+// function greetTwice() {
+// 	greet();  // First call
+// 	greet();  // Second call
+// }
 
-greetTwice();
+// greetTwice();
 
-//eg:3 
-function printSum(a, b) {
-	console.log(a + b);
-}
+// //eg:3 
+// function printSum(a, b) {
+// 	console.log(a + b);
+// }
 
-function calculateAndDisplaySum(x, y) {
-	printSum(x, y);  // Passing data to printSum
-}
+// function calculateAndDisplaySum(x, y) {
+// 	printSum(x, y);  // Passing data to printSum
+// }
 
-calculateAndDisplaySum(5, 7);  // Outputs: 12
+// calculateAndDisplaySum(5, 7);  // Outputs: 12
 
-//EG: 3
-function multiply(a, b) {
-	return a * b;
-}
+// //EG: 3
+// function multiply(a, b) {
+// 	return a * b;
+// }
 
-function square(n) {
-	return multiply(n, n);
-}
+// function square(n) {
+// 	return multiply(n, n);
+// }
 
-function printSquareOfNumber(num) {
-	let result = square(num);
-	console.log("The square of", num, "is", result);
-}
+// function printSquareOfNumber(num) {
+// 	let result = square(num);
+// 	console.log("The square of", num, "is", result);
+// }
 
-printSquareOfNumber(4);  // Outputs: The square of 4 is 16
+// printSquareOfNumber(4);  // Outputs: The square of 4 is 16
 
 
-// EG:4
-function makeMultiplier(factor) {
-	return function(number) {
-		 return number * factor;
-	};
-}
+// // EG:4
+// function makeMultiplier(factor) {
+// 	return function(number) {
+// 		 return number * factor;
+// 	};
+// }
 
-const double = makeMultiplier(2);
-const triple = makeMultiplier(3);
+// const double = makeMultiplier(2);
+// const triple = makeMultiplier(3);
 
-console.log(double(5));  // Outputs: 10
-console.log(triple(5));  // Outputs: 15
+// console.log(double(5));  // Outputs: 10
+// console.log(triple(5));  // Outputs: 15
 
-//eg:5
-function greet() {
-	return "Hello";
-}
+// //eg:5
+// function greet() {
+// 	return "Hello";
+// }
 
-function greetPerson(name) {
-	let greeting = greet();
-	console.log(`${greeting}, ${name}!`);
-}
+// function greetPerson(name) {
+// 	let greeting = greet();
+// 	console.log(`${greeting}, ${name}!`);
+// }
 
-greetPerson('Sparsh');  // Outputs: Hello, Alice!
+// greetPerson('Sparsh');  // Outputs: Hello, Alice!
 
-//eg:6 
-function multiply(a, b) {
-	return a * b;
-}
+// //eg:6 
+// function multiply(a, b) {
+// 	return a * b;
+// }
 
-function square(n) {
-	return multiply(n, n);
-}
+// function square(n) {
+// 	return multiply(n, n);
+// }
 
-console.log(square(5));  // Outputs: 25
+// console.log(square(5));  // Outputs: 25
 
-//eg:7
-function makeAdder(x) {
-	return function(y) {
-		 return x + y;
-	};
-}
+// //eg:7
+// function makeAdder(x) {
+// 	return function(y) {
+// 		 return x + y;
+// 	};
+// }
 
-const addFive = makeAdder(5);
-console.log(addFive(3));  // Outputs: 8
+// const addFive = makeAdder(5);
+// console.log(addFive(3));  // Outputs: 8
 
-//eg:8
-const numbers = [1, 2, 3];
-const doubled = numbers.map(function(num) {
-    return num * 2;
-});
-console.log(doubled);  // Outputs: [2, 4, 6]
+// //eg:8
+// const numbers = [1, 2, 3];
+// const doubled = numbers.map(function(num) {
+//     return num * 2;
+// });
+// console.log(doubled);  // Outputs: [2, 4, 6]
 
-//eg:9
-function cutFruitPieces(fruit) {
-	return fruit * 4;
-}
+// //eg:9
+// function cutFruitPieces(fruit) {
+// 	return fruit * 4;
+// }
 
-function fruitProcessor (apples, oranges) {
-	const applePieces = cutFruitPieces(apples);
-	const orangePieces = cutFruitPieces(oranges);
+// function fruitProcessor (apples, oranges) {
+// 	const applePieces = cutFruitPieces(apples);
+// 	const orangePieces = cutFruitPieces(oranges);
  
-    const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
-	return juice;
-}
-console.log(fruitProcessor(2, 3));
+//     const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+// 	return juice;
+// }
+// console.log(fruitProcessor(2, 3));
 
-//eg:10
-function calcAge(birthYear, firstName) { //parameters 
-	const age = 2037 - birthYear;
-	const name = firstName +' '+ 'Rai';
-	console.log(`${name} is ${age} years old`);
-	return age;
+// //eg:10
+// function calcAge(birthYear, firstName) { //parameters 
+// 	const age = 2037 - birthYear;
+// 	const name = firstName +' '+ 'Rai';
+// 	console.log(`${name} is ${age} years old`);
+// 	return age;
 
-}
+// }
 
-const age = calcAge(1991, 'Jonas') //arguements 
-
-
-//CODING CHALLANGE
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
-
-function checkWinner(avgDolphins, avgKoalas) {
-    if (avgDolphins >= 2 * avgKoalas) {
-        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
-    } else if (avgKoalas >= 2 * avgDolphins) {
-        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
-    } else {
-        console.log("No team wins...");
-    }
-}
+// const age = calcAge(1991, 'Jonas') //arguements 
 
 
-const scoreDolphins2 = calcAverage(85, 54, 41);
-const scoreKoalas2 = calcAverage(23, 34, 27);
-checkWinner(scoreDolphins2, scoreKoalas2);
-checkWinner(scoreDolphins, scoreKoalas);
+// //CODING CHALLANGE
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+// const scoreDolphins = calcAverage(44, 23, 71);
+// const scoreKoalas = calcAverage(65, 54, 49);
+
+// function checkWinner(avgDolphins, avgKoalas) {
+//     if (avgDolphins >= 2 * avgKoalas) {
+//         console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+//     } else if (avgKoalas >= 2 * avgDolphins) {
+//         console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+//     } else {
+//         console.log("No team wins...");
+//     }
+// }
 
 
-
-//ARRAYS
-
-//In JavaScript, an array is a single, high-level, list-like object used to store multiple values as a single entity. Arrays allow you to store collections of data, whether they be numbers, strings, objects, or even other arrays. They are particularly useful when you need to work with large data sets, such as lists of user input or elements on a webpage.
-const friend1 = 'Michael';
-const friend2 = 'Steven';
-const friend3 = 'Peter';
-
-const friends = ['Michael', 'Steven', 'Peter'];
-console.log(friends);
-
-const years = new Array (1991, 1984, 2008, 2020);
-console.log(years);
-
-console.log(friends[0]);
-console.log(years[0]);
-
-console.log(friends.length);
-console.log(years.length);
-
-console.log(friends[friends.length - 1]);
-console.log(years[years.length - 1]);
-
-friends [2] = 'Jay';
-console.log(friends);
+// const scoreDolphins2 = calcAverage(85, 54, 41);
+// const scoreKoalas2 = calcAverage(23, 34, 27);
+// checkWinner(scoreDolphins2, scoreKoalas2);
+// checkWinner(scoreDolphins, scoreKoalas);
 
 
 
-const firstName = 'Jonas';
-const jonas = ['Jonas', 'Schmedtmann', 2037 - 1991, 'teacher',friends];
+// //ARRAYS
 
-console.log(jonas);
-console.log(jonas.length);
+// //In JavaScript, an array is a single, high-level, list-like object used to store multiple values as a single entity. Arrays allow you to store collections of data, whether they be numbers, strings, objects, or even other arrays. They are particularly useful when you need to work with large data sets, such as lists of user input or elements on a webpage.
+// const friend1 = 'Michael';
+// const friend2 = 'Steven';
+// const friend3 = 'Peter';
 
-//Exercise
-const calcAge = function (birthYear) {
-	return 2037 - birthYear;
-}
-const years1 = [1990, 1967, 2002, 2010, 2018];
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
 
-console.log(calcAge(years1));
+// const years = new Array (1991, 1984, 2008, 2020);
+// console.log(years);
 
+// console.log(friends[0]);
+// console.log(years[0]);
 
-// Creating an array
-const fruits = ["Apple", "Banana", "Cherry"];
+// console.log(friends.length);
+// console.log(years.length);
 
-// Accessing array elements
-console.log(fruits[0]); // Outputs: Apple
-console.log(fruits[2]); // Outputs: Cherry
+// console.log(friends[friends.length - 1]);
+// console.log(years[years.length - 1]);
 
-// Adding an element
-fruits.push("Date");
-
-// Looping through an array
-fruits.forEach(fruit => console.log(fruit));
-
-// Initializing an array with numbers
-const numbersQ = [1, 2, 3, 4, 5];
-
-// Adding elements at the start and end
-numbers.push(6); // Add to the end
-numbers.unshift(0); // Add to the start
-
-// Removing elements from the start and end
-const first = numbers.shift(); // Removes the first element
-const last = numbers.pop(); // Removes the last element
-
-// Using slice to create a new array
-const quickSlice = numbers.slice(1, 4); // Extracts elements at index 1 to 3
-
-console.log(quickSlice); // Outputs: [2, 3, 4]
+// friends [2] = 'Jay';
+// console.log(friends);
 
 
-// Two arrays of numbers
-const array1 = [1, 2, 3];
-const array2 = [4, 5, 6];
 
-// Concatenating two arrays
-const combined = array1.concat(array2);
+// const firstName = 'Jonas';
+// const jonas = ['Jonas', 'Schmedtmann', 2037 - 1991, 'teacher',friends];
 
-// Mapping to a new array
-const multiplied = combined.map(x => x * 2);
+// console.log(jonas);
+// console.log(jonas.length);
 
-// Filtering the array
-const filtered = multiplied.filter(x => x > 8);
+// //Exercise
+// // const calcAge = function (birthYear) {
+// // 	return 2037 - birthYear;
+// // }
+// // const years1 = [1990, 1967, 2002, 2010, 2018];
 
-// Reducing to a single value
-const sum = filtered.reduce((acc, x) => acc + x, 0);
+// // console.log(calcAge(years1));
 
-console.log(sum); // Outputs: 28 (10 + 12)
+
+// // Creating an array
+// const fruits = ["Apple", "Banana", "Cherry"];
+
+// // Accessing array elements
+// console.log(fruits[0]); // Outputs: Apple
+// console.log(fruits[2]); // Outputs: Cherry
+
+// // Adding an element
+// fruits.push("Date");
+
+// // Looping through an array
+// fruits.forEach(fruit => console.log(fruit));
+
+// // Initializing an array with numbers
+// const numbersQ = [1, 2, 3, 4, 5];
+
+// // Adding elements at the start and end
+// numbers.push(6); // Add to the end
+// numbers.unshift(0); // Add to the start
+
+// // Removing elements from the start and end
+// const first = numbers.shift(); // Removes the first element
+// const last = numbers.pop(); // Removes the last element
+
+// // Using slice to create a new array
+// const quickSlice = numbers.slice(1, 4); // Extracts elements at index 1 to 3
+
+// console.log(quickSlice); // Outputs: [2, 3, 4]
+
+
+// // Two arrays of numbers
+// const array1 = [1, 2, 3];
+// const array2 = [4, 5, 6];
+
+// // Concatenating two arrays
+// const combined = array1.concat(array2);
+
+// // Mapping to a new array
+// const multiplied = combined.map(x => x * 2);
+
+// // Filtering the array
+// const filtered = multiplied.filter(x => x > 8);
+
+// // Reducing to a single value
+// const sum = filtered.reduce((acc, x) => acc + x, 0);
+
+// console.log(sum); // Outputs: 28 (10 + 12)
 
 // Expert Example: Complex Array Operations
 
 // Array of objects representing people
-const people = [
-	{ name: "Alice", age: 25 },
-	{ name: "Bob", age: 30 },
-	{ name: "Charlie", age: 28 }
-];
+// const people = [
+// 	{ name: "Alice", age: 25 },
+// 	{ name: "Bob", age: 30 },
+// 	{ name: "Charlie", age: 28 }
+// ];
 
 // Sorting by age
-people.sort((a, b) => a.age - b.age);
+// people.sort((a, b) => a.age - b.age);
 
-// Finding a person
-const charlie = people.find(person => person.name === "Charlie");
+// // Finding a person
+// const charlie = people.find(person => person.name === "Charlie");
 
-// Checking if all are older than 20
-const allOlderThan20 = people.every(person => person.age > 20);
+// // Checking if all are older than 20
+// const allOlderThan20 = people.every(person => person.age > 20);
 
-// Checking if any are older than 30
-const anyOlderThan30 = people.some(person => person.age > 30);
+// // Checking if any are older than 30
+// const anyOlderThan30 = people.some(person => person.age > 30);
 
-console.log(charlie); // Outputs: { name: 'Charlie', age: 28 }
-console.log(allOlderThan20); // true
-console.log(anyOlderThan30); // false
+// console.log(charlie); // Outputs: { name: 'Charlie', age: 28 }
+// console.log(allOlderThan20); // true
+// console.log(anyOlderThan30); // false
+
+
+// some useful array method?
+
+
+//add elements
+const friends = ['Michael', 'steven', 'peter;'];
+const newLength = friends.push ('Jay');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John', 'carter');
+console.log(friends);
+
+//remove elements
+friends.pop();//last
+const popped = friends.pop();
+
+console.log(friends);
+console.log(popped);
+
+//remove first element
+friends.shift();//first
+console.log(friends);
+
+console.log(friends.indexOf('steven'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23);
+console.log(friends.includes('steven'));
+console.log(friends.includes('bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('peter')) {
+	console.log('You have a friend called peter');
+}
+
+if (friends.includes('steven')) {
+	console.log('You have a friend called steven');
+}
+
+//coding challange
+// function calcTip(bill) {
+// 	if (bill >= 50 && bill <= 300) {
+// 		 return bill * 0.15; // 15% tip
+// 	} else {
+// 		 return bill * 0.20; // 20% tip
+// 	}
+// }
+
+// // Array of bills
+// const bills = [125, 555, 44];
+
+// // Array of tips, calculated from each bill
+// const tips = bills.map(bill => calcTip(bill));
+
+// // Bonus: Array of totals (bill + tip)
+// const totals = bills.map((bill, index) => bill + tips[index]);
+
+// // Logging the results
+// console.log('Bills:', bills);
+// console.log('Tips:', tips);
+// console.log('Totals:', totals);
+
+
+//OBJECTS
+
+// An object in JavaScript is a fundamental data structure that's used to store collections of data and more complex entities. In JavaScript, almost everything is an object, including functions and arrays
+// An object can be seen as a collection of properties, with a property being an association between a name (or key) and a value. The value can be a function, a number, a string, or any other type, including another object. Objects in JavaScript are dynamic, meaning properties can usually be added and removed after creation.
+
+// const jonasArray = [
+// 	'jonas',
+// 	'Schmedtmann',
+// 	2037 - 1991,
+// 	'teacher',
+// 	['michael', 'peter', 'Steven']
+// ];
+
+// console.log(jonasArray[2]);
+
+// const jonas = {
+// 	firstName:'Jonas',
+//    lastName: 'Schedmann',
+// 	age: 2037 - 1991,
+// 	job: 'teacher',
+// 	friends:['Michael', 'Peter', 'Steven']
+
+// };
+
+// //How to retrieve data from objects and how to delete data from objects
+// console.log(jonas);
+
+// console.log(jonas.lastName);
+// console.log(jonas.age);
+
+// const nameKey = 'Name';
+// console.log(jonas['first'+ nameKey]);
+// console.log(jonas['last'+ nameKey]);
+
+// // const interestedIn = prompt('What do you want to know about Jonas? Choose between firtName, lastName, age, job, and Friends');
+
+// // if(jonas[interestedIn]) {
+// // 	console.log(jonas[interestedIn]);
+// // }else {
+// // 	console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+// // }
+
+// jonas.location = 'portugal'; 
+// jonas['twitter']= '@jonasschmedtman';
+
+
+// //challange 
+// //Jonas has 3 friwnds, and his best friend is called michael"
+
+// console.log(`${jonas.firstName} has ${jonas.friends.length}, and his best friend is called ${jonas.friends[0]}`);
+
+
+
+
+//OBJECT METHODS
+
+
+const jonas = {
+		firstName:'Jonas'   ,
+		lastName: 'Schedmann',
+		age: 2037 - 1991,
+		job: 'teacher',
+		friends:['Michael', 'Peter', 'Steven'],
+		hasDriversLicense: true,
+
+     calcAge: function(birthYear) {
+		return 2037 = birthyear;
+	  }
+};
+	
