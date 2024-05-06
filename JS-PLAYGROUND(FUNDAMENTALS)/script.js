@@ -1140,16 +1140,270 @@ if (friends.includes('steven')) {
 //OBJECT METHODS
 
 
-const jonas = {
-		firstName:'Jonas'   ,
-		lastName: 'Schedmann',
-		age: 2037 - 1991,
-		job: 'teacher',
-		friends:['Michael', 'Peter', 'Steven'],
-		hasDriversLicense: true,
+// const jonas = {
+// 		firstName:'Jonas'   ,
+// 		lastName: 'Schedmann',
+// 		age:  1991,
+// 		job: 'teacher',
+// 		friends:['Michael', 'Peter', 'Steven'],
+// 		hasDriversLicense: true,
 
-     calcAge: function(birthYear) {
-		return 2037 = birthyear;
-	  }
-};
+//      calcAge: function(birthYear) {
+// 		console.log(this);
+// 		return 2037 - this.birthYear;
+// 	  },
+// 	  //any function that is attached to an object is called (Method).
+
+// 	  getSummary: function() {
+// 		return`${this.firstName} is a ${this.calcAge()} year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+// 	  }
+// };
 	
+
+// console.log(jonas.calcAge(1991));
+// // console.log(jonas['calcAge'](1991));
+
+// // calcAge: function () {
+// // 	this.age = 2037 - this.birthYear;
+// // 	return this.age
+// // }
+
+
+// //Challange
+// //"jonas is a 46 year old teacher, and he has a driver's license"
+
+// console.log(jonas.getSummary());
+
+// //CODING CHALLANGE
+// const mark = {
+// 	fullName: 'Mark Miller',
+// 	mass: 78,
+// 	height: 1.69,
+// 	calcBMI: function() {
+// 		 this.bmi = this.mass / (this.height * this.height);
+// 		 return this.bmi;
+// 	}
+// };
+
+// const john = {
+// 	fullName: 'John Smith',
+// 	mass: 92,
+// 	height: 1.95,
+// 	calcBMI: function() {
+// 		 this.bmi = this.mass / (this.height * this.height);
+// 		 return this.bmi;
+// 	}
+// };
+
+// mark.calcBMI();
+// john.calcBMI();
+
+// if (mark.bmi > john.bmi) {
+// 	console.log(`${mark.fullName}'s BMI (${mark.bmi.toFixed(1)}) is higher than ${john.fullName}'s (${john.bmi.toFixed(1)})!`);
+// } else if (john.bmi > mark.bmi) {
+// 	console.log(`${john.fullName}'s BMI (${john.bmi.toFixed(1)}) is higher than ${mark.fullName}'s (${mark.bmi.toFixed(1)})!`);
+// } else {
+// 	console.log(`${mark.fullName} and ${john.fullName} have the same BMI (${mark.bmi.toFixed(1)})!`);
+// }
+
+const mark = {
+	fullName: 'Mark Miller',
+	mass: 78,
+	height: 1.69,
+	calcBMI: function() {
+		this.bmi = this.mass / this.height ** 2;
+		return this.bmi
+	}
+
+};
+
+const john = {
+	fullName: 'John Smith',
+	mass: 92,
+	height: 1.95,
+	calcBMI: function () {
+		this.bmu = this.mass / this.height ** 2;
+		return this.bmi;
+	}
+};
+
+mark.calcBMI();
+john.calcBMI();
+
+console.log(john.bmi, mark.bmi);
+
+if(mark.bmi > john.bmi) {
+	console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s bMI (${john.bmi}`)
+
+} else if (john.bmi > mark.bmi) {
+	console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`)
+}
+//Objects in JavaScript are dynamic, meaning you can add or remove properties after an object is created. This flexibility is powerful but can also lead to more complex code and potential bugs if not managed carefully.
+//JavaScript objects are integral to almost all aspects of JavaScript programming. They provide a flexible structure for grouping data and functionalities, making it easier to build scalable and maintainable software systems.
+
+
+
+
+
+
+
+//(LOOPS)
+
+// console.log('lifting weights repition 1');
+// console.log('lifting weights repition 2');
+// console.log('lifting weights repition 3');
+// console.log('lifting weights repition 4');
+// console.log('lifting weights repition 5');
+// console.log('lifting weights repition 6');
+// console.log('lifting weights repition 7');
+// console.log('lifting weights repition 8');
+// console.log('lifting weights repition 9');
+// console.log('lifting weights repition 10');
+
+
+//for loop keeps running while condition is TRUE
+for(let rep = 1; rep <= 10; rep++) {
+	console.log(`lifting weights repition ${rep}'~'`);
+}
+
+//A for loop is a fundamental control flow statement in JavaScript that allows you to repeat a block of code multiple times. It provides a structured way to iterate over a specific sequence or collection of elements.
+//for (initialization; condition; afterthought) {
+  // Code to be executed repeatedly
+
+
+
+  const jonas = [
+	'jonas',                //[0]
+	'Schmedtmann',//[1]
+	2037 - 1991,//[2]
+	'teacher',//[3]
+	['michael', 'peter', 'Steven']//[4]
+	
+];
+
+const types = [];
+// console.log(jonas[4])
+
+for (let i = 0; i < jonas.length; i++) {
+	console.log(jonas[i], typeof jonas[i]);
+
+	//filling an array
+	types[i] = typeof jonas[i];
+}
+
+console.log(types)
+
+
+//very very important implication of for loop
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+	ages.push(2037 - years[i]);
+
+}
+console.log(ages);
+
+//continue and break
+console.log('---ONLY STRING---');
+for (let i = 0; i < jonas.length; i++) {
+	if(typeof jonas[i] !== 'string') continue; // if the type of the current element is not an string continue with the next iteration.
+
+ console.log(jonas[i], typeof jonas[i]);
+}
+
+
+//what break does is completelt terminate the loop 
+console.log('---BREAK with NUMBER---');
+for (let i = 0; i < jonas.length; i++) {
+	if(typeof jonas[i] !== 'number') break; // if the type of the current element is not an string continue with the next iteration.
+
+ console.log(jonas[i], typeof jonas[i]);
+}
+
+
+//break
+const numbers = [1, 2, 3, 4, 5, 6];
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === 4) {
+        console.log('Number 4 found, breaking loop!');
+        break;
+    }
+    console.log('Number:', numbers[i]);
+}
+// Output:
+// Number: 1
+// Number: 2
+// Number: 3
+// Number 4 found, breaking loop!
+
+
+//continue
+const numberss = [1, 2, 3, 4, 5, 6];
+for (let i = 0; i < numberss.length; i++) {
+    if (numberss[i] % 2 !== 0) { // Skip odd numbers
+        continue;
+    }
+    console.log('Even number:', numberss[i]);
+}
+// Output:
+// Even number: 2
+// Even number: 4
+// Even number: 6
+
+
+
+//LOOPING BACKWARDS
+const jonass = [
+	'Jonas',
+	'Schmedtmann',
+	2037 - 1991,
+	'teacher',
+	['Michael', 'Peter', 'Steven'],
+	true,
+];
+
+//0, 1, ...,4
+//4, 3, ..., 0
+
+for(let i = jonas.length - 1; i >= 0; i--) {
+	console.log(jonas[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+	console.log(`<------strating exercise ${exercise}----->`);
+
+	for (let rep = 1 ; rep < 6; rep++) {
+		console.log(`lifting weight repetition ${rep}`);
+	}
+}
+
+
+
+
+
+
+
+//backwards loop
+for (let i = 5; i >= 0; i--) {
+	console.log("Counting down:", i);
+ }
+ 
+
+ const numbersss = [1, 2, 3, 4, 5];
+numbersss.reverse();
+
+for (let i = 0; i < numbersss.length; i++) {
+  console.log("Reversed:", numbersss[i]);
+}
+
+
+for (let rep = 1; rep <= 10; rep++) {
+	console.log(`lifting weights repitition ${rep}`)
+}
+
+let rep = 1;
+while (rep <= 10) {
+	console.log(`Lifting weights repitition ${rep}`);
+	rep ++;
+}
