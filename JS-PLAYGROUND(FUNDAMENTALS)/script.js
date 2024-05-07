@@ -1402,8 +1402,90 @@ for (let rep = 1; rep <= 10; rep++) {
 	console.log(`lifting weights repitition ${rep}`)
 }
 
+// let rep = 1;
+// while (rep <= 10) {
+// 	console.log(`Lifting weights repitition ${rep}`);
+// 	rep ++;
+// }
+
+
+
+
+//The WHILE LOOP
+
+for (let reps = 1; reps <= 10; reps++) {
+	console.log(`Lifting weights repetition ${reps} `);
+}
+
+
 let rep = 1;
 while (rep <= 10) {
-	console.log(`Lifting weights repitition ${rep}`);
-	rep ++;
+	console.log(`WHILE: lifting weights repetition ${rep}`);
+	rep++;
+
 }
+
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+	console.log(`you rolled a ${dice}`);
+	dice=Math.trunc(Math.random() * 6) + 1;
+	if (dice === 6 ) console.log('loop is about to end...');
+}  
+
+
+// The while loop is a fundamental control structure in JavaScript that is used to execute a block of code repeatedly as long as a specified condition evaluates to true. It is one of the primary ways to create loops in JavaScript, alongside for and do...while loops. The while loop is particularly useful when the number of iterations is not known before the loop starts.
+
+while (condition) {
+	// code block to be executed
+ }
+ 
+
+ let counter = 0;
+
+while (counter < 5) {
+  console.log(counter);
+  counter++;  // Increment the counter
+}
+
+// As long as counter remains less than 5, the loop continues to execute.
+
+
+let n = 10; // Can be any positive integer
+let sum = 0;
+let current = 1;
+while (current <= n) {
+    sum += current;
+    current++;
+}
+console.log("Sum:", sum);
+
+let userInput;
+while (isNaN(userInput)) {
+    userInput = prompt("Please enter a valid number:");
+    userInput = Number(userInput);
+}
+console.log("Valid number entered:", userInput);
+
+
+// Objective: Find all prime numbers up to a specified number n.
+let nS = 30; // Find primes up to 30
+let number = 2;
+while (number <= n) {
+    let isPrime = true;
+    let factor = 2;
+    while (factor <= Math.sqrt(number)) {
+        if (number % factor === 0) {
+            isPrime = false;
+            break;
+        }
+        factor++;
+    }
+    if (isPrime) {
+        console.log(number, "is a prime number");
+    }
+    number++;
+}
+
