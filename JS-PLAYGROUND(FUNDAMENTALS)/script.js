@@ -1495,3 +1495,63 @@ while (number <= n) {
 
 
 
+
+
+
+
+//how to fail at learning code 
+//--dont have a clear goal in the beginning og your journey
+//--just copy the code without caring and understanding how it works, just copy and paste the code
+//--dont reinforce what you are learning by doing small challanges or taking notes
+//--dont practice coding and dont come up with your own project ideas
+//--became frustrated when your code is not perfectly clean or effecient
+//--losing motivation quickly because thinking that you could never know everything
+//--learning is isolation whithout sharing your process
+
+
+//after finishing a couple courses you think that you are a web developer and could start applying to jons but you cannot even build your own app
+
+
+
+//[ How to Think Like a Developer: Become a Problem Solver!
+
+// first make sure you 100 % understand the problem, ask the right questions to get a clear picture of the probelm
+
+//Divide and Conquer Strategy: Break a big problem into smaller sub-problems
+
+//Research as much as you can and as much as you have to (resaercgins is a huge part of a programmers JOB).
+
+//for bigger problems write pseudo-code,] -----four step framw work
+
+
+// Understand the Problem
+// Research and Gather Information
+// Plan Your Approach
+// Write Clean Code
+// Debug and Optimize
+// Continuous Learning
+// Think Critically and Creatively
+// Collaborate and Communicate
+// Reflect and Improve
+
+
+
+
+//DEBUGGING : Debugging is the process of identifying and fixing errors, or bugs, in a computer program.  These bugs can cause crashes, incorrect outputs, security vulnerabilities, and more.  In essence, it's like being a detective for software!
+
+// SoftWare Bug: Defect or Problem in a computer program Basically, any unexpected or unintended behavior of a computer program is a software bug
+
+//Bugs are completely normal in Software Development
+
+// IDENTIFY (Becoming aware that there is a bug)-> FIND (isolating where exactly the bug is happening in code) -> FIX ( correct the bug) -> PREVENT (preventing it from happening again)
+
+
+
+//What is DOM AND WHAT IS DOM MANIPULATION (WHAT IS THE DOM AND HOW IT ACTUALLY WORKS)
+// DOCUMENT OBJECT MODEL: STRUCTURED REPRESENTATION OF HTML DOCUMENTS THAT ALLOWS JAVASCRIPT TO ACCESS HTML ELEMENTS AND STYLES TO MANIPULATE THEM.  (CHANGE TEXT, html attributes and even CSS styles)
+
+//WE CAN SAY THAT DOM IS BASICALLY THE CONNECTION POINT BETWEEN HTML DOCUMENTS AND JAVASCRIPT CODE
+
+//THE DOM IS AUTOMATICALLY CREATED BY THE BROWSER AS SOON AS THE HTML PAGE LOADS.
+
+//API STANDS FOR APPLICATION PROGRAMMING INTERFACE
