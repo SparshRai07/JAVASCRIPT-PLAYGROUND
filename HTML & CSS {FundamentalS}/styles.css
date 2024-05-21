@@ -2,6 +2,15 @@
 
 /* css describes the visual style and presentatiom of the content written in HTMl */
 
+/* combining selectors */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+   font-family: sans-serif;
+}
 
 
 h1 {
@@ -43,3 +52,148 @@ li {
    font-family: sans-serif;
 
 }
+/* combining selector pt2 (descendent selector) */
+footer p {
+   font-size: 16px;
+
+}
+
+article header p {
+   font-style: italic;
+}
+
+#author {
+   font-style:italic;
+   font-size: 18px;
+}
+#copyright {
+   font-size:  16px;
+   
+}
+
+.related-author {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+/* ul {
+   list-style:none;
+} */
+
+.related {
+   list-style: none;
+}
+
+.main-header {
+   background-color: #f7f7f7;
+
+}
+
+aside {
+   background-color: #f7f7f7;
+   border-top: 5px solid #1098ad;
+   border-bottom: 5px solid #1098ad;
+   border-left: 5px dashed #1098ad;
+   border-right: 5px dotted #1098ad;
+   
+}
+
+/* PSEUDO ELEMENTS */
+li:first-child {
+   font-weight: bold;
+}
+
+li:last-child {
+   font-weight: bolder;
+}
+
+/* (odd, even) */
+
+li:nth-child(2){ 
+   color: red;
+}
+
+
+/* STYLING LINKS */
+a:link {
+   color: pink;
+   text-decoration: none;
+   /* gets rid of the underline */
+}
+
+a:visited {
+   color:blue;
+}
+
+a:hover {
+   color: orangered;
+   font-weight: bold;
+   text-decoration: underline dotted green;
+
+}
+/* state when we are actually clicking */
+a:active {
+   background-color: black;
+   font-style: italic;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Working with Colors 
+RGB MODEL: every color can be representated b a combination of RED, GREEN and YELLOW 
+EACH of the 3 base colors can take a value between 0 and 255, which leads to 16.8 million different colors 0-255. 0-255, 0-255
+*/
+
+/* RGB/RGBA NOTATION 
+rgb(0, 255, 255)
+
+RGB with transparency ("alpha")
+rgba(0, 255, 255, 0.3)
+
+*/
+
+
+/* HEXADECIMAL NOTATION 
+instead of using a scale from 0 to 255, we go from 0 to ff (255 in hexadecimal numbers
+#00ffff
+
+shorthand, when all colors are identical pairs
+#0ff
+*/
+
+/* shades of GREY
+rgb(0, 0, 0) */
+
+
+
