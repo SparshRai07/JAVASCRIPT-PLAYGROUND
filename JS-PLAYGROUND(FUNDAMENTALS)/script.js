@@ -1555,3 +1555,24 @@ while (number <= n) {
 //THE DOM IS AUTOMATICALLY CREATED BY THE BROWSER AS SOON AS THE HTML PAGE LOADS.
 
 //API STANDS FOR APPLICATION PROGRAMMING INTERFACE
+
+// Events in JavaScript are actions that occur on a web page due to user interaction, such as clicking a button. When an event occurs, the app fires the event, which is a signal that an event has occurred. The app then responds to the user through event handlers in JavaScript. An event handler is a function with a block of code that is executed or triggered when a specific event fires
+
+// const toggleButton = document.getElementById("toggleButton");
+//   const paragraph = document.getElementById("myParagraph");
+
+//   toggleButton.addEventListener("click", function() {
+//     if (paragraph.style.display === "none") {
+//       paragraph.style.display = "block"; // Show the paragraph
+//     } else {
+//       paragraph.style.display = "none"; // Hide the paragraph
+//     }
+//   });
+
+
+
+
+// KEY EVENTS 
+// Key events are fired when a user interacts with the keyboard. JavaScript provides several types of key events to capture these interactions, allowing developers to execute code in response.
+
+
