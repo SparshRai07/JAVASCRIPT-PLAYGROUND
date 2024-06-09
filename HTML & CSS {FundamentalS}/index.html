@@ -1,4 +1,4 @@
-<!-- //Hyper Text Markup Language
+<!--  //Hyper Text Markup Language
 //Structure and describe the content -->
 <!--  //Consists of elements like paragraphs, links, headings, images, videos-->
 <!-- web browsers understand HTML and render HTML code a swebsites -->
@@ -6,7 +6,112 @@
 <p>html is <h1>Markup Language</h1></p> -->
 <!-- <h1>child element -->
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Basic Language of the Web: HTML</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+      <h1>The Code Magazine</h1>
+      <nav>
+         <a href="blog.html">Blog</a>
+         <a href="#">Challenges</a>
+         <a href="#">Flexbox</a>
+         <a href="#">CSS Grid</a>
+         <a href="about.html">About</a>
+         <a href="contact.html">Contact</a>
+      </nav>
+      <p>Test paragraph</p>
+   </header>
+
+   <article>
+      <header>   
+         <h2>The Basic Language of the Web: HTML</h2>
+         <img src="laura-jones.jpg" alt="Headshot of Laura Jones" height="58" width="50"/>
+      </header>
+
+      <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+      <img src="post-img.jpg" alt="HTML code on screen" width="500" height="200">
+
+      <p>All modern websites and web applications are built using three <em>fundamental</em> technologies: HTML, CSS, and JavaScript. These are the languages of the web.</p>
+      <p>In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it.</p>
+      <p>HTML stands for <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup language that web developers use to structure and describe the content of a webpage (not a programming language).</p>
+      <p>In HTML, each element is made up of 3 parts:</p>
+
+      <ol>
+         <li>The opening tag</li>
+         <li>The closing tag</li>
+         <li>The actual element</li>
+      </ol>
+
+      <p>You can learn more at</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a>
+   </article>
+
+   <h4>Related Posts</h4>
+   <ul>
+      <li><img src="related-1.jpg" alt="How to Learn Web Development" width="100" height="100"><a href="article.html">How to Learn Web Development</a></li>
+      <p class="related-author">By Jonas Schmedtmann</p>
+      <li><img src="related-2.jpg" alt="The Unknown Powers of CSS" width="100" height="100"><a href="article.html">The Unknown Powers of CSS</a></li>
+      <p class="related-author">By Jim Dillion</p>
+      <li><img src="related-3.jpg" alt="Why JavaScript is Awesome" width="100" height="100"><a href="article.html">Why JavaScript is Awesome</a></li>
+      <p class="related-author">By Matilda</p>
+   </ul>
+
+   <aside>
+      <h4>Additional Resources</h4>
+      <ul>
+         <li>
+            <img src="related-1.jpg" alt="Person Programming" width="75" height="75">
+            <a href="#">How to Learn Web Development</a>
+            <p>By Jonas Schmedtmann</p>
+         </li>
+         <li>
+            <img src="related-2.jpg" alt="Lightning" width="75" height="75">
+            <a href="#">The Unknown Powers of CSS</a>
+            <p>By Jim Dillion</p>
+         </li>
+         <li>
+            <img src="related-3.jpg" alt="Code" width="75" height="75">
+            <a href="#">Why JavaScript is Awesome</a>
+            <p>By Matilda</p>
+         </li>
+      </ul>
+   </aside>
+
+   <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or feedback, feel free to reach out to us:</p>
+      <form action="/submit-form" method="post">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+         <br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+         <br>
+         <label for="message">Message:</label>
+         <textarea id="message" name="message" rows="4" required></textarea>
+         <br>
+         <button type="submit">Submit</button>
+      </form>
+   </section>
+
+   <footer>
+      <p>&copy; 2027 The Code Magazine. All rights reserved.</p>
+      <p>Follow us on:
+         <a href="https://twitter.com/thecodemagazine" target="_blank">Twitter</a> |
+         <a href="https://facebook.com/thecodemagazine" target="_blank">Facebook</a> |
+         <a href="https://instagram.com/thecodemagazine" target="_blank">Instagram</a>
+      </p>
+   </footer>
+</body>
+</html>
+
+<!-- <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,8 +171,8 @@
       <p class="related-author">By Jim Dillion</p>
       <li class="related"><img src="related-3.jpg" alt="" width="100" height="100"><><a href="article">Why JavaScript is Awesome</a></li>
       <p class="related-author">By Matilda</p>
-<!-- FROM THE VIDEO -->
-     <aside>
+ FROM THE VIDEO -->
+     <!-- <aside>
       <ul>
          <li>
             <img src="related-1.jpg" alt="Person Programming" width="75" width="75">
@@ -90,7 +195,7 @@
       
       <p>Copyright &copy; 2027 by The Code Magazine.</p>
    </footer>
-</body>
+</body> --> 
 <!-- CODING CHALLANGE FOR HTML -->
 <!-- <article>
 <h1>Converse Chuck Taylor All Star Low Top </h1>
@@ -106,12 +211,14 @@
 <ul>
    <li>Lightweight,durable canvas sneaker</li>
    <li>Lightly padded foothead for added comfort</li>
-   <li>Iconic Chuck Taylor ankle patch.</li>
+   <li>Iconic Chuck Taylor ankle patch.</li>//
 </ul>
 
 
   
 <button>Add to Cart</button>
 </article> -->
-   
-</html>
+<!-- 29 -->
+
+
+    

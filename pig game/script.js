@@ -68,8 +68,9 @@ document.getElementById(`current--${activePlayer}`).textContent =
 scores(activePlayer);
 
 
+
 //2. check if player's score is >= 100 
-//
+//finsih the game
 
 })
 
