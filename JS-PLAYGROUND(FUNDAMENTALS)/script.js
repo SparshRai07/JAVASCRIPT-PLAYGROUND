@@ -1576,3 +1576,4 @@ while (number <= n) {
 // Key events are fired when a user interacts with the keyboard. JavaScript provides several types of key events to capture these interactions, allowing developers to execute code in response.
 
 
+// HOW JAVASCIPT WORKS BEHIND THE SCENES
