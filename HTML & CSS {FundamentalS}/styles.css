@@ -3,19 +3,40 @@
 /* css describes the visual style and presentatiom of the content written in HTMl */
 
 /* combining selectors */
-h1,
+/* h1,
 h2,
 h3,
 h4,
 p,
 li {
    font-family: sans-serif;
+} */
+
+body {
+   color: #444;
+   font-family: sans-serif;
+   border-top: 10px solid #1098ad;
+   /* background-color: grey; */
+
 }
 
+.main-header {
+   background-color: grey;
+   padding-top: 1000px;
+
+}
+
+nav-bar {
+   color: #444;
+   font-size: 18px;
+   margin-left: 10px;;
+
+}
 
 h1 {
-   color: blue;
-   font-size: 26px;
+   color: rgb(35, 155, 155);
+   font-size: 46px;
+   margin-top: 22px;
    font-family: sans-serif;
    text-transform: uppercase;
    font-style: italic;
@@ -50,11 +71,13 @@ p {
 li {
    font-size: 20px;
    font-family: sans-serif;
+   margin-bottom: 18px;
+
 
 }
 /* combining selector pt2 (descendent selector) */
 footer p {
-   font-size: 16px;
+   font-size: 13px;
 
 }
 
@@ -84,10 +107,7 @@ article header p {
    list-style: none;
 }
 
-.main-header {
-   background-color: #f7f7f7;
 
-}
 
 aside {
    background-color: #f7f7f7;
@@ -110,13 +130,13 @@ li:last-child {
 /* (odd, even) */
 
 li:nth-child(2){ 
-   color: red;
+   color:black;
 }
 
 
 /* STYLING LINKS */
 a:link {
-   color: pink;
+   color: #1098ad;
    text-decoration: none;
    /* gets rid of the underline */
 }
@@ -141,7 +161,24 @@ a:active {
 
 
 
+/* RESOLVING CONFLICTS */
+#copyright {
+   color: red;
+}
 
+.copyright {
+   color: blue;
+
+}
+
+.text {
+   color: yellow;
+
+}
+
+footer p {
+   color: green;
+}
 
 
 
