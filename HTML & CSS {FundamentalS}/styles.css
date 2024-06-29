@@ -19,6 +19,9 @@ body {
    /* background-color: grey; */
 
 }
+/* Page Section */
+
+
 
 .main-header {
    background-color: grey;
@@ -156,6 +159,17 @@ a:active {
    background-color: black;
    font-style: italic;
 
+
+   .post-img {
+      width: 100%;
+      height: auto;
+   }
+
+   nav a:link {
+      background-color: orangered;
+      margin: 20px;
+      
+   }
 }
 
 

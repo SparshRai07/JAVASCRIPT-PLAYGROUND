@@ -1,3 +1,7 @@
+
+
+/* UDEMY HTML AND CSS COURSE BY JONAS SCHMEDTMANN ✔✔👏👏*/
+
 /* As a front-end developer, DevTools are more than just debugging aids; they're your comprehensive toolkit for crafting exceptional web experiences. They empower you to:
 
 1. Inspect and Modify Page Structure (Elements Panel):
@@ -149,4 +153,52 @@ CSS Animations and Transitions: These features add interactivity and visual flai
 Benefits
 Time-Saving: CSS allows you to write styles once and reuse them across multiple HTML pages, saving time and effort.
 Easy Maintenance: CSS promotes clean code and separation of concerns, making it easier to update styles without affecting other parts of the site.
-Search Engine Optimization (SEO): Properly styled HTML (thanks to CSS) enhances readability for search engines and users, positively affecting rankings */
+Search Engine Optimization (SEO): Properly styled HTML (thanks to CSS) enhances readability for search engines and users, positively affecting rankings */ 
+
+
+/* To bring out emoji one must press windows + . key in vs code and it is not an extension and rather an inbuilt function ✔✔✔✔✔👀👀👀👀👀👀🤢🤢🤢🤢 */
+
+
+/* Inline Elements and Block Elements in HTML
+Inline Elements:
+Definition: Inline elements do not start on a new line and only take up as much width as necessary.
+Examples: <span>, <a>, <img>, <strong>, <em>.
+Characteristics:
+They do not cause line breaks.
+They can contain text and other inline elements.
+Their dimensions (width and height) are determined by their content.
+Block Elements:
+Definition: Block elements start on a new line and take up the full width available.
+Examples: <div>, <p>, <h1>-<h6>, <ul>, <ol>, <li>, <section>, <article>.
+Characteristics:
+They cause line breaks before and after the element.
+They can contain other block elements and inline elements.
+Their width is by default 100% of the parent container, but it can be adjusted using CSS. */
+
+
+/*  Pseudo-elements in HTML and CSS
+Pseudo-elements are a powerful feature in CSS that allow you to style specific parts of an element's content. They are not real elements in the DOM (Document Object Model) but act as if they are, enabling more precise styling.
+
+Key Pseudo-elements
+::before and ::after
+
+Usage: These pseudo-elements are used to insert content before or after an element's actual content. They are often used to add decorative elements without adding extra HTML.
+
+
+::first-line
+
+Usage: Styles the first line of a block-level element. Useful for styling text in a unique way, like changing the font or color of the first line.
+
+::first-letter
+
+Usage: Styles the first letter of a block-level element. Commonly used for typographic effects like drop caps.
+
+::selection
+
+Usage: Styles the portion of an element that is selected by the user (e.g., highlighted text).
+
+
+
+position: relative: Adjusts the element's position while keeping it in the document flow.
+position: absolute: Removes the element from the document flow and positions it relative to its nearest positioned ancestor.
+*/
