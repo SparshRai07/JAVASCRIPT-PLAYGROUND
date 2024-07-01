@@ -260,3 +260,19 @@ Clearing is necessary to ensure the parent container properly encloses floated e
 Clearfix is a common technique to clear floats without adding extra markup.
 Modern Layouts: Use Flexbox and Grid for more robust and flexible layout solutions. */
 
+
+
+/* The concept of box-sizing: border-box; in CSS is fundamental to controlling the layout and sizing of elements on a webpage. It changes how the total width and height of an element are calculated, making it easier to manage layout and avoid unexpected overflow issues.*/
+
+/* FLEX BOX
+Flexbox, or the Flexible Box Layout, is a CSS layout module designed to help you distribute space and align items within a container, even when their size is unknown or dynamic. It's particularly useful for creating responsive web designs that adapt to different screen sizes and orientations.
+
+Basic Concepts
+Flex Container: The parent element that holds flex items. It uses the display: flex; property to become a flex container.
+Flex Items: The child elements inside the flex container.
+How Flexbox Works
+Analogy:
+Imagine you have a container (a box) and inside this container, you have several items (balls). You want to arrange these balls in a specific way within the box. Flexbox helps you do that easily.
+
+Example:
+Think of a row of buttons on a navigation bar. You want these buttons to be evenly spaced, centered, or aligned to one side. Flexbox can handle this effortlessly. */
