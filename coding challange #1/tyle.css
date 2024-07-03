@@ -34,8 +34,8 @@ body{
 img {
    margin-top: -18px;
    margin-left: 0px;
-   width: 200px;
-   height: 200px;
+   width: 250px;
+   height: 250px;
    float: left;
    /* margin-top: 10px; */
 
@@ -203,4 +203,7 @@ h3 .colors li:nth-child(6) { background-color: #ff8c00; } */ */
    /* background-color: #2f6ee2; */
    margin-top: -17px;
    margin-left: 20px;
+}
+product-info{
+
 }
