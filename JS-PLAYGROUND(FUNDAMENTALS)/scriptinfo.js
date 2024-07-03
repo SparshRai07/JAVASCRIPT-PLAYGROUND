@@ -357,3 +357,90 @@
 // The Temporal Dead Zone (TDZ) is the period between the entering of a block scope and the point at which a variable declared with let or const is initialized. During this period, accessing the variable will throw a ReferenceError.
 
 
+
+
+
+// Hoisting in JavaScript
+// What is Hoisting?
+// Hoisting is a JavaScript mechanism where variable and function declarations are moved ("hoisted") to the top of their containing scope during the compilation phase, before the code is executed. This means that you can use functions and variables before they are declared in the code.
+
+// Why Does Hoisting Exist?
+// Hoisting was created to allow flexibility in code organization and to make it easier to read and write code without worrying too much about the order of declarations.
+
+// Purpose of Hoisting
+// Flexibility in Coding: Allows developers to use functions and variables before they are declared.
+// Backward Compatibility: Helps maintain older JavaScript code that may not follow modern best practices.
+// Ease of Use: Makes the code more readable by allowing functions to be declared after they are called.
+// Hoisting Analogy
+// Analogy:
+// Imagine you are writing a play, and you can mention the characters and props before actually defining them in detail. The director (JavaScript engine) knows to look ahead in the script to find the definitions.
+
+// Real-Life Example:
+// Think of planning a party. You might tell your friend, "We'll have cake and ice cream," even before you've decided on the exact types or bought them. Your friend knows that these items will be defined and available by the time of the party.
+
+// How Hoisting Works:
+// Function Declarations:
+// javascript
+// Copy code
+// console.log(greet()); // "Hello, world!"
+
+// function greet() {
+//   return "Hello, world!";
+// }
+// Explanation:
+// The function greet is hoisted to the top of the scope, so it can be called before its actual declaration.
+
+// Variable Declarations with var:
+// javascript
+// Copy code
+// console.log(name); // undefined
+// var name = "John";
+// console.log(name); // "John"
+// Explanation:
+// The declaration of name is hoisted, but its assignment is not. So, when console.log(name) is called the first time, name is declared but not assigned, resulting in undefined.
+
+// Variable Declarations with let and const:
+// javascript
+// Copy code
+// console.log(age); // ReferenceError: Cannot access 'age' before initialization
+// let age = 25;
+// console.log(age); // 25
+// Explanation:
+// The declaration of age is hoisted, but accessing it before initialization throws a ReferenceError due to the Temporal Dead Zone (TDZ).
+
+// Temporal Dead Zone (TDZ)
+// What is the TDZ?
+// The TDZ is the period between the entering of a block scope and the point where a variable declared with let or const is initialized. During this period, the variable cannot be accessed and will throw a ReferenceError if attempted.
+
+// Purpose of the TDZ
+// Prevent Errors: Ensures that variables are not used before they are properly initialized.
+// Maintain Predictability: Helps avoid logical errors and makes the code behavior more predictable.
+// TDZ Analogy
+// Analogy:
+// Imagine you are organizing an event, and the room is reserved from 9 AM. If you or anyone tries to enter the room before 9 AM, the doors are locked, and no one can access the room until the reservation time.
+
+// Real-Life Example:
+// Consider a bank account that becomes active only after a certain date. Before that date, any attempt to access the account details will be denied.
+
+// How TDZ Works:
+// Example with let:
+// javascript
+// Copy code
+// {
+//   console.log(x); // ReferenceError: Cannot access 'x' before initialization
+//   let x = 10;
+//   console.log(x); // 10
+// }
+// Explanation:
+// The variable x is in the TDZ from the start of the block until the let declaration is executed. Accessing it before initialization results in a ReferenceError.
+
+// Example with const:
+// javascript
+// Copy code
+// {
+//   console.log(y); // ReferenceError: Cannot access 'y' before initialization
+//   const y = 20;
+//   console.log(y); // 20
+// }
+// Explanation:
+// Similar to let, const variables are also in the TDZ until their initialization. Attempting to access y before its declaration results in a ReferenceError.
