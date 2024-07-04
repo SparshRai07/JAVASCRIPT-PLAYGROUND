@@ -276,3 +276,8 @@ Imagine you have a container (a box) and inside this container, you have several
 
 Example:
 Think of a row of buttons on a navigation bar. You want these buttons to be evenly spaced, centered, or aligned to one side. Flexbox can handle this effortlessly. */
+
+/* the Flex Property
+flex-grow: This defines how much a flex item will grow relative to the rest of the flex items inside the same container when there's extra space.
+flex-shrink: This defines how much a flex item will shrink relative to the rest of the flex items inside the same container when there isn't enough space.
+flex-basis: This defines the initial main size of the flex item before any growing or shrinking occurs. */

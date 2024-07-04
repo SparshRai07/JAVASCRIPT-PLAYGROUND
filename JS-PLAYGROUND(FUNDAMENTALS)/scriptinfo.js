@@ -444,3 +444,14 @@
 // }
 // Explanation:
 // Similar to let, const variables are also in the TDZ until their initialization. Attempting to access y before its declaration results in a ReferenceError.
+
+
+
+// Why this Exists
+// Purpose:
+
+// The this keyword provides a way to access the context in which a function is executed.
+// It allows functions to be more dynamic by referring to objects that invoke them, rather than being tightly bound to a particular object.
+// Analogy:
+
+// Imagine you are in a room with a name tag that says "You are here." The this keyword is like that name tag, always pointing to your current position, which can change based on where you are standing.
