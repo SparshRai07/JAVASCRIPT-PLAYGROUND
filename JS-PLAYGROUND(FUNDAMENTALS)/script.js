@@ -1529,3 +1529,19 @@ calcAge(1991);
 // console.log(age);
 // printAge();
 */
+
+
+//THIS.KEYWORD
+// const user = {
+//   name: 'Alice',
+//   age: 30,
+//   updateAge: function(newAge) {
+//     this.age = newAge;
+//   },
+//   displayInfo: function() {
+//     console.log(`User: ${this.name}, Age: ${this.age}`);
+//   }
+// };
+
+// user.updateAge(31);
+// user.displayInfo(); // User: Alice, Age  : 31
