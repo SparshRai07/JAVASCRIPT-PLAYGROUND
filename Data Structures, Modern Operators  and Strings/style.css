@@ -1,0 +1,86 @@
+body {
+   background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   color: #f0f0f0;
+}
+
+.container {
+   text-align: center;
+   background: rgba(0, 0, 0, 0.7);
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+   width: 80%;
+   max-width: 900px;
+}
+
+header h1 {
+   font-size: 3em;
+   margin: 0;
+   color: #00ffff;
+   text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+header p {
+   font-size: 1.2em;
+   margin: 10px 0 20px;
+}
+
+.main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.terminal {
+   background: #1e1e1e;
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+   width: 100%;
+   max-width: 800px;
+   overflow: hidden;
+}
+
+.terminal-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   background: #2a2a2a;
+}
+
+.terminal-header .buttons {
+   display: flex;
+   gap: 5px;
+}
+
+.terminal-header .buttons span {
+   display: block;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background: #555;
+}
+
+.terminal-header .buttons .close { background: #ff5f56; }
+.terminal-header .buttons .minimize { background: #ffbd2e; }
+.terminal-header .buttons .maximize { background: #27c93f; }
+
+.terminal-header .title {
+   color: #f0f0f0;
+   font-size: 1em;
+}
+
+.terminal-body {
+   background: #1e1e1e;
+   padding: 20px;
+   color: #00ffff;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 1.2em;
+   text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
