@@ -552,18 +552,23 @@ Conclusion
 CSS Grid is a powerful tool for creating flexible, responsive, and complex web layouts. By understanding its core concepts, exploring practical examples, and leveraging advanced features, developers and designers can build modern web applications that are both visually appealing and highly functional. Whether you're a beginner or an experienced developer, mastering CSS Grid can significantly enhance your web development skills. */ */
 
 
+ /* CSS Grid is a set of CSS properties for building 2-dimensional layouts */
+
+ /* The main idea behind CSS grid is that we divide a container elemetn into rows and columns that can be  filled with its child elements
+  */
+
+
+/* in two-dimensional contexts, CSS Grid allows us to write less nested HTML and easier-to-read CSS */
+
+/* CSS Grid is not meant to replace flexbox! Instead, they work perfectly together. Need a 1D layout? Use flexbox. Need a 2D layou? Use CSS Grid. */
+
+/* everything happens in a grid container and we initate grid by display: grid; in Css and all the child content in the grid container becomes grid items
  */
 
 
+ /* /* there is two directions in the CSS GRID one is column axis (up to down) and there is another axis which is Row Axis (left to right)  */
 
 
-
-
-
-
-
-
-
-
-
-
+ {
+  display: grid;
+ }
