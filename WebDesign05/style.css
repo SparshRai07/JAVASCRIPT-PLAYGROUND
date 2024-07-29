@@ -138,8 +138,14 @@ FONT SIZE SYSTEM (px)
  }
  
  /* CHAIRS */
+ 
+ .chair {
+  box-shadow: 0px 20px 30px 0px #2b2b2bca;
+ }
+
  .chair-box {
    padding: 24px;
+   /* box-shadow: 20px 20px 20px 20px black; */
  }
  
  h3 {
