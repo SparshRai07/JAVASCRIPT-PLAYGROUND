@@ -11,7 +11,23 @@ const restaurant = {
    categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
    starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
    mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-}
+
+   openingHours: {
+      thu: {
+        open: 12,
+        close: 22,
+      },
+      fri: {
+        open: 11,
+        close: 23,
+      },
+      sat: {
+        open: 0, // Open 24 hours
+        close: 24,
+      },
+    },
+  };
+
 
 
 // Destructuring arrays
@@ -25,16 +41,29 @@ console.log(x, y, z);
 console.log(arr);
 
 
+// const [main, , secondary] = resturant.categories;
+// console.log(main, secondary);  //Italian Vegetarian
+
 
 
 
 //Switiching Variables
+[main, secondary] = [seconday, main];
+console.log(main, secondary);
+    //Vegetarian Italian
+
+  
+
+//NESTED DESTRUCTURING
+const nested = [2, 4, [5, 6]];
+const [i, [j, k]] = nested;
+console.log(i, j, k);
+    //2 5 6
+
+ 
 
 
 
-
-
-// [main, secondary] =  
 
 
 
