@@ -1,0 +1,43 @@
+:root {
+   --color-light: lightgray;
+   --color-dark: darkgray;
+
+}
+
+html, body {
+   margin: 0;
+   padding: 0;
+   background-color: papayawhip;
+}
+
+.container {
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   height: 100vh;
+   /* width: 600px;
+   /*  */
+} 
+
+
+.circles {
+   color:#000;
+   height: 1.5em;
+   width: 1.5em;
+   margin: .5em;
+   border-radius: 50%;
+   animation: pulse 1s;
+
+}
+
+@keyframes pulse {
+   from {
+      background: var(--color-dark);
+   }
+
+   to {
+      background: var(--color-light);
+      height: 1.6em;
+      width: 1.6em;
+   }
+}
