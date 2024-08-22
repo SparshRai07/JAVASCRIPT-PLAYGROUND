@@ -48,16 +48,16 @@ console.log(arr);
 
 
 //Switiching Variables
-[main, secondary] = [seconday, main];
-console.log(main, secondary);
+// [main, secondary] = [seconday, main];
+// console.log(main, secondary);
     //Vegetarian Italian
 
   
 
 //NESTED DESTRUCTURING
-const nested = [2, 4, [5, 6]];
-const [i, [j, k]] = nested;
-console.log(i, j, k);
+// const nested = [2, 4, [5, 6]];
+// const [i, [j, k]] = nested;
+// console.log(i, j, k);
     //2 5 6
 
  
@@ -97,3 +97,63 @@ console.log(bb); // Output: 1
 
 
 
+// SHORT CIRCUITING METHOD
+
+const rest1 = {
+   name : 'Capri',
+   numGuests: 20,
+
+};
+
+const rest2 = {
+name: 'La Piazza',
+owner: 'Giovanni Rossi',
+
+
+};
+
+// rest1.numGuests = rest1.numGuests  || 10;
+// rest2.numGuests = rest1.numGuests  || 10;
+
+// or assignment operator
+rest1.numGuests ||= 10;
+rest1.numGuests ||= 10; 
+
+console.log(rest1);
+console.log(rest2);
+
+
+
+
+//FOR LOOP
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of menu)
+   console.log(item);
+
+for (const item of menu.entries()) {
+
+}
+
+// let numbers = [10, 20, 30, 40, 50];
+
+// for (let number of numbers) {
+//   console.log(number);
+// }
+
+// Output:
+// 10
+// 20
+// 30
+// 40
+// 50
+
+
+
+// ENHANCED OBJECT LITERAl
+// Enhanced Object Literals include:
+
+// Property Shorthand: Allows you to define properties using just the variable name when the property name matches the variable name.
+// Method Shorthand: Enables defining methods without the function keyword.
+// Computed Property Names: Lets you use expressions as property names within an object.

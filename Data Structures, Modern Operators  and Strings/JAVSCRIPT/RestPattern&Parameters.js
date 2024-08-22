@@ -56,3 +56,33 @@ console.log(age); // 25
 console.log(otherDetails); // { country: 'USA', profession: 'Developer' }
 
 
+
+// The nullish coalescing operator (??) is not the exact opposite of the short-circuiting methods (&& and ||), but it serves a different purpose and can be considered a more specific alternative in certain contexts. Here’s a detailed comparison:
+
+// Nullish Coalescing Operator (??)
+// The nullish coalescing operator (??) is used to provide a default value only when the left-hand operand is null or undefined. It is useful when you want to handle cases where a value might be explicitly null or undefined, but still want to allow falsy values like 0, false, or an empty string.
+
+// Syntax: expression1 ?? expression2
+
+let user = null;
+let defaultUser = "Guest";
+console.log(user ?? defaultUser); // Output: "Guest" (because user is null)
+
+let count = 0;
+let defaultCount = 10;
+console.log(count ?? defaultCount); // Output: 0 (because count is not null or undefined)
+
+
+// Logical OR (||)
+// The logical OR operator (||) returns the right-hand operand if the left-hand operand is falsy (i.e., false, 0, null, undefined, NaN, or an empty string).
+
+// Syntax: expression1 || expression2
+
+// Examples:
+// let user = null;
+// let defaultUser = "Guest";
+// console.log(user || defaultUser); // Output: "Guest" (because user is falsy)
+
+// let count = 0;
+// let defaultCount = 10;
+// console.log(count || defaultCount); // Output: 10 (because count is falsy)
