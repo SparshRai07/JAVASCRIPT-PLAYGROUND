@@ -1,0 +1,49 @@
+html, body{
+   margin: 0;
+   padding: 0;
+}
+
+:root {
+   --toggle-switch-bg: #232328;
+   --toggle-border: #232428;
+   --toggle-bg: #fff;
+   --circle-size: 20px;
+   --toggle-width: 50px;
+}
+
+.toggle-wrap {
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   /* color: black; */
+}
+
+.toggle-input {
+   display: none;
+   /* color: black; */
+}
+
+label {
+   width: var(--toggle-width);
+   height: var(--circle-size);
+   border: 3px solid var(--toggle-border);
+   padding: .25em;
+   border-radius: 40px;
+   background: var(--toggle-bg);
+
+}
+
+.toggle-switch {
+   height: var(--circle-size);
+   width: var(--circle-size);
+   background-color: var(--toggle-switch-bg);
+   border-radius: 50%;
+   transition: all .5s;
+
+}
+
+.toggle-input:checked .toggle-switch {
+   /* background:blue; */
+   transform: translateX(calc(var(--toggle-width) - var(--circle-size)));
+}
