@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carousel Component</title>
+</head>
+<style>
+   /* 
+   Main Color: #087f5b
+   Grey Color: #343a40 */
+   * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        /*   */
+      }
+
+      .carousel{
+         width: 800px;
+         margin: 100px auto;
+         border-radius: 8px;
+         padding: 32px;
+         background-color: #087f5b;
+         color: #fff;
+
+         display: flex;
+         align-items: center;
+         gap: 32px;
+      }
+
+      img {
+         height: 200px;
+         border-radius: 8px;
+         transform: scale(1.5)
+      }
+
+   
+.testimonial-text{
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 1.5;
+   margin-bottom: 32px;
+   color: #e6fcf5;
+}
+
+.textimonial-author {
+   font-size: 14px;
+   margin-bottom: 4px;
+   color: #c3fae8;
+
+}
+.testimonial-job {
+   font-size: 12px;
+   color: #c3fae8;
+
+
+}
+</style>
+<body>
+   <div class="carousel">
+      <img src="images/maria.jpg" alt="Maria de Almedia" />
+      <blockquote class="testimonial">
+         <p class="testimonial-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat modi eligendi itaque ratione repudiandae libero, tempore sequi obcaecati quam, porro et! 
+         </p>
+         <p class="textimonial-author">Maria de Almeida</p>
+         <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
+      </blockquote>
+      <button class="btn">
+         <svg xmlns="http://www.w3.org/2000/svg" 
+         class="btn-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="chevron-left">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          </svg>
+          
+      </button>
+   </div>
+</body>
+</html>
