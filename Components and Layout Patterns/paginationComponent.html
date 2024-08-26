@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CHALLANGE:Pagination Component</title>
+   <style>
+   /* .chevron-right, .chevron-left{
+      height:30px;
+      width:30px;
+      background-color: #fff;
+      color: #087f5b;
+      border: 1px solid #087f5b;
+      border-radius: 20px;
+   } */
+
+   .chevron-right, .chevron-left {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    color: #087f5b;
+    border: 1px solid #087f5b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.chevron-right:hover, .chevron-left:hover,
+.chevron-right:active, .chevron-left:active {
+    background-color: #087f5b;
+    color: white;
+}
+
+   .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 22px;
+      font-family: "Helvetica", sans-serif;
+      /* font-weight: bold; */
+      /* top: 300px; */
+      margin-top: 300px;
+      font-size: 18px;
+      
+      
+   }
+
+   .page-link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #087f5b;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+/* .page-link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%; /* Make the background circular */
+    /* color: #087f5b;
+    background-color: white; /* Set initial background color */
+    /* border: 1px solid #087f5b; Add border to define the circle */ */
+    /* transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}  */
+
+   .page-link:hover, .page-link:active{
+    color: #087f5b; /* Change text color to theme color */
+    background-color: white; /* Change background to white */
+}
+
+   </style>
+</head>
+<body>
+   <div class="pagination">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="chevron-left">
+         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+       </svg>
+       
+      <p class="page-link">1</p>
+      <p class="page-link">2</p>
+      <p class="page-link">3</p>
+      <p class="page-link">4</p>
+      <p class="page-link">5</p>
+      <p class="page-link">6</p>
+      <p class="page-link">...</p>
+      <p class="page-link">23</p>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="chevron-right">
+         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+       </svg>
+       
+   </div>
+   
+</body>
+</html>
