@@ -175,12 +175,12 @@ for (const item of menu.entries()) {
   //       close: 24,
   //     },
   //   }
-for (const day of Object.keys(openingHours)) {
-  console.log(day);
-}
+// for (const day of Object.keys(openingHours)) {
+//   console.log(day);
+// }
 
-const entries = Object.entries(openingHours);
-console.log(entries);
+// const entries = Object.entries(openingHours);
+// console.log(entries);
 
 // Object.keys(object)
 
@@ -354,3 +354,44 @@ console.log(entries);
 
 
 
+
+
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log('B737'[0]);
+
+
+
+const airlinee = 'TAP Air Portugal';
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
+//FIx Capitalization in name 
+const passenger = 'jONaS'; //Jonas
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect = passengerLower[0].toUpperCase() + passengerLower.slice(1);
+
+console.log(passengerCorrect);
+
+// Comparing emails
+
+console.log('a+very+nice+string'.split('+'));//['a', 'very', 'nice', 'string']
+
+console.log('Jonas Schmedtmann'.split(''));
+
+const [firstName, lastName] = 'Jonas Schmedtmann'. split(' ');
+//['J', 'o', 'n', 'a', 's', ' ', 'S', 'c', 'h', 'm', 'e', 'd', 't', 'm', 'a', 'n', 'n']
+
+const newName = ['Mr.', firstName, lastName. toUpperCase()].join(' ');
+console,log(newName);
+
+// const CapitalizeName = function(name)
+
+const flights =
+  '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+
+console.log(flights.split('+'));
