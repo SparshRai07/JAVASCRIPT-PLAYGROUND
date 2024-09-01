@@ -1,0 +1,62 @@
+/* 
+
+--01 TYPOGRAPHY SYSTEM
+
+font sizes (px):
+10/ 12 / 14/ 16 / 18 / 20 / 24 / 30 / 36 / 44 / 53 / 62 / 74 / 86 / 98
+
+-Font weights:
+Default: 400
+ 
+
+-Line heights: 
+Default:1
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+
+--- 02 COLORS
+
+Primary: #e67e22
+
+-Tints: 
+-Shades: 
+-Accents:
+-Greys: #555
+
+--05 SHADOWS
+
+--06 BORDER-RADIUS
+
+--07 WHITESPACE
+
+-Spacing system (px
+
+
+*/
+
+
+/* GLOBAL RESET */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+   line-height: 1;
+   font-weight: 400;
+   color: #555;
+
+}
+
+/* WHAT IS RESPONSIVE DESIGN ALL ABOUT 
+
+   WHAT IS RESPONSIVE DESIGN?
+-->DESIGN technique to make a webpage adjust its layout and visual style to any possible screen size (window or viewport size)
+
+-In practice, this means that responsive design makes websites usable on all devices, such as desktop computers, tablets and mobile phones
+
+-its a set of practices, not a separate technology. its all just CSS
