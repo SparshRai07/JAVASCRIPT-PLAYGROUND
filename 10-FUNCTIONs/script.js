@@ -109,3 +109,32 @@ checkIn(flight, jonas);
 // 👉A function that receives another function as an        argument, that returns a new  function. or both
 
 // 👉This is only possible because of first-class functions
+
+
+
+// 1. What is a Callback Function?
+// A callback function is a function that is passed as an argument to another function and is executed after some operation has been completed. The concept is foundational in programming, particularly in asynchronous programming, event-driven environments, and in scenarios where functions need to be executed after specific actions.
+
+
+//JONAS considers 132. Functions Accepting Callback Functions the Most important lecture among the whole course as he considers callbacks a vital part of the JavaScript language
+
+
+// functions returning functions
+
+const greet = function (greeting) {
+   return function (name) {
+      console.log(`${greeting} ${name}`);
+   };
+};
+
+const greeterHey = greet('Hey');
+greeterHey('Jonas');
+greeterHey('Steven');
+
+greet('Hello')('Jonas');
+
+
+//challenge
+const greetArr = greeting => name => console.log(`${greeting} ${name}`);
+
+greetArr('Hi') ('Jonas');
