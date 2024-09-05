@@ -138,3 +138,48 @@ greet('Hello')('Jonas');
 const greetArr = greeting => name => console.log(`${greeting} ${name}`);
 
 greetArr('Hi') ('Jonas');
+
+
+// const
+
+// In JavaScript, functions are first-class objects, meaning that they can have properties and methods. The call(), apply(), and bind() methods are powerful tools for controlling how functions are invoked, specifically by allowing you to explicitly set the value of this within the function.
+// The call() method invokes a function with a specific this value and allows you to pass arguments individually.
+function greet(greeting, punctuation) {
+   console.log(greeting + ', ' + this.name + punctuation);
+}
+
+const person = { name: 'John' };
+
+greet.call(person, 'Hello', '!');  // Output: Hello, John!
+
+
+// 2. apply()
+// The apply() method is similar to call(), but it takes the arguments as an array rather than passing them individually.
+function greet(greeting, punctuation) {
+   console.log(greeting + ', ' + this.name + punctuation);
+}
+
+const person1 = { name: 'Jane' };
+
+greet.apply(person1, ['Hi', '?']);  // Output: Hi, Jane?
+
+
+// 3. bind()
+// The bind() method returns a new function that, when called, has its this value permanently set to the provided thisArg. It can also take predefined arguments (partial application).
+function greet(greeting, punctuation) {
+   console.log(greeting + ', ' + this.name + punctuation);
+}
+
+const person3 = { name: 'Tom' };
+
+const greetTom = greet.bind(person3);
+greetTom('Hello', '!');  // Output: Hello, Tom!
+
+
+
+// Immediately Invoked Function Expression (IIFE)
+// An Immediately Invoked Function Expression (IIFE) in JavaScript is a function that is defined and executed immediately after its creation. The function is invoked as soon as it is defined, and it’s typically used to create a local scope, avoiding polluting the global namespace.
+
+(function() {
+   console.log("This function runs immediately!");
+})();
